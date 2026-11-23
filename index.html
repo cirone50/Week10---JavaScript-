@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM and CSS changes</title>
+		<!-- link to external CSS file -->
+		<link href="styles.css" rel="stylesheet">
+		<!-- link to external JS file -->
+		<script src="external.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Sunny Hill Sheep Farm</h1>
+			<p>Using JavaScript to change the HTML and CSS that is already on the page</p>
+		</header>
+
+		<main>
+			<!-- random number, then change the CSS with .style -->
+			<section class="card">
+				<h2>1. Lucky number</h2>
+				<p id="demo">text goes here</p>
+				<!-- add an onclick event to this button -->
+				<button type="button" onclick="random()">Click to see a random number</button>
+			</section>
+
+			<!-- show and hide a list by changing its class -->
+			<section class="card">
+				<h2>2. Farm jobs</h2>
+				<!-- the list starts hidden because of the hideList class -->
+				<ul class="list hideList" id="menu">
+					<li>Feed the sheep</li>
+					<li>Fix the fence</li>
+					<li>Collect the eggs</li>
+					<li>Clean the barn</li>
+				</ul>
+				<!-- add an onmouseover event AND an onclick event to this button -->
+				<button type="button" onmouseover="changeCss()" onclick="hide()">hover and click here</button>
+			</section>
+
+			<!-- swap an image by changing its src attribute -->
+			<section class="card">
+				<h2>3. Picture swap</h2>
+				<img id="img-swap" src="happy-sheep.jpg" alt="happy sheep">
+				<!-- add an onclick event to this button -->
+				<button type="button" onclick="swap()">Swap the picture</button>
+			</section>
+
+			<!-- change CSS that is already in styles.css -->
+			<section class="card" id="news">
+				<h2>4. Farm news</h2>
+				<p id="news-text">Spring has arrived at Sunny Hill. Twelve new lambs were born this week, the top field has been reseeded, and the farm shop opens again on Saturday morning.</p>
+				<!-- add an onclick event to each of these 3 buttons -->
+				<button type="button" onclick="bigText()">Bigger text</button>
+				<button type="button" onclick="nigthMode()">Night mode</button>
+				<button type="button" onclick="resetNews()">Reset</button>
+			</section>
+		</main>
+	</body>
+</html>

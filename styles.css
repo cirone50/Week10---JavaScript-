@@ -1,0 +1,109 @@
+
+
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f4f1e8;
+	color: #333333;
+}
+
+/* ---------- header ---------- */
+header{
+	background-color: olivedrab;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1{
+	margin: 0;
+}
+
+/* ---------- layout ---------- */
+main{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* every demo sits in a white card */
+.card{
+	background-color: white;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2{
+	margin-top: 0;
+	color: olivedrab;
+}
+
+/* ---------- buttons ---------- */
+button{
+	background-color: olivedrab;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 16px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: darkolivegreen;
+}
+
+/* ---------- lucky number ---------- */
+
+#demo{
+	background-color: #eeeeee;
+	color: #333333;
+	border: 2px dashed #999999;
+	padding: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* ---------- farm jobs list ---------- */
+/* JS changes this: the list swaps between hideList and showList */
+.list{
+	color: red;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.hideList{
+	display: none;
+}
+
+.showList{
+	display: block;
+}
+
+/* ---------- picture swap ---------- */
+
+img{
+	display: block;
+	height: 150px;
+	margin-bottom: 15px;
+}
+
+/* ---------- farm news ---------- */
+
+#news-text{
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+.night{
+	background-color: #1e2a38;
+	color: #f4f1e8;
+	border-color: #1e2a38;
+}
+
+.night h2{
+	color: gold;
+}
